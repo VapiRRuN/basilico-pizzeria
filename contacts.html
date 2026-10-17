@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты  "Базилико"</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="img/logo.jpg" alt="Логотип Базилико">
+      <span>Базилико</span>
+    </a>
+    <button class="burger" id="burger">☰</button>
+    <nav class="menu" id="menu">
+      <a href="index.html">Главная</a>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">О пиццерии</a>
+      <a href="contacts.html" class="active">Контакты</a>
+      <a href="registration.html">Регистрация</a>
+      <a href="cart.html">Корзина</a>
+      <a href="payment.html">Оплата</a>
+    </nav>
+  </header>
+  <section class="hero small">
+    <h1>Контакты</h1>
+    <p>Мы в центре города, в пяти минутах от метро.</p>
+  </section>
+  <section class="block">
+    <h2>Наши данные</h2>
+    <div class="columns">
+      <div class="box">
+        <h3>Адрес</h3>
+        <p>г. Москва, ул. Базиличная, 12</p>
+      </div>
+      <div class="box">
+        <h3>Телефон</h3>
+        <p>+7 (495) 123-45-67</p>
+      </div>
+      <div class="box">
+        <h3>Почта</h3>
+        <p>info@basilico.ru</p>
+      </div>
+    </div>
+  </section>
+  <section class="block gray">
+    <h2>Обратная связь</h2>
+    <form id="feedbackForm" class="form">
+      <label for="name">Имя *</label>
+      <input type="text" id="name" placeholder="Как к вам обращаться" required>
+      <label for="phone">Телефон *</label>
+      <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+      <label for="message">Сообщение *</label>
+      <textarea id="message" rows="5" placeholder="Введите текст" required></textarea>
+      <button type="submit" class="btn">Отправить</button>
+      <p id="formResult" class="result"></p>
+    </form>
+    <p class="note">
+      Форма работает только в браузере. Данные никуда не отправляются.
+    </p>
+  </section>
+  <footer class="footer">
+    <p>© 2026 ООО "Базилико".</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
